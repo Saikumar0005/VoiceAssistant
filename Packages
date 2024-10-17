@@ -2,12 +2,12 @@ To run the code the following packages want to install.
 Syntax to install package is- pip install <package-name>
 Syntax to import the packages is- import <package-name>
 The packages are- 1.pyttsx3
-        				  2.pywhatkit
-        				  3.wikipedia
-        				  4.webbrowser
-        				  5.speech_recognition
-        				  6.datatime
-        				  7.requests
+                  2.pywhatkit
+                  3.wikipedia
+        	  4.webbrowser
+        	  5.speech_recognition
+                  6.datatime
+        	  7.requests
 
 
 The purpose of the packages are-
