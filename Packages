@@ -1,0 +1,19 @@
+To run the code the following packages want to install.
+Syntax to install package is- pip install <package-name>
+Syntax to import the packages is- import <package-name>
+The packages are- 1.pyttsx3
+        				  2.pywhatkit
+        				  3.wikipedia
+        				  4.webbrowser
+        				  5.speech_recognition
+        				  6.datatime
+        				  7.requests
+
+
+The purpose of the packages are-
+Pyttsx3-It is used to convert text into speech (TTS) and is platform-independent (works offline).
+Pywhatkit-It is a Python library for automation tasks like sending WhatsApp messages, performing Google searches, and playing YouTube videos.
+Wikipedia-This library allows you to easily retrieve data from Wikipedia in a structured format.
+Webbrowser-The webbrowser module allows you to control the default web browser, opening URLs directly from Python.
+SpeechRecognition-It is converts spoken language into text. It is useful for voice-controlled assistants or transcription services.
+Datetime-The datetime module allows you to work with dates and times in Python, including getting the current time, performing date arithmetic, and formatting time.
