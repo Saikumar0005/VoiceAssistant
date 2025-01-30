@@ -65,6 +65,29 @@ def process_command(command):
     elif 'open youtube' in command:
         speak("Opening YouTube")
         webbrowser.open("https://www.youtube.com")
+    elif 'weather' in command:
+        speak("Please tell me the city name.")
+        cityname = listen()
+        apiKey = "7040ea904442a45d6950ba584410ce59"
+        baseURL = "http://api.openweathermap.org/data/2.5/weather?q="
+        completeURL = baseURL + cityname + "&appid=" + apiKey
+        response = requests.get(completeURL)
+        data = response.json()
+        if data["cod"] != "404":
+            main = data["main"]
+            wind = data["wind"]
+            temperature = main["temp"]
+            humidity = main["humidity"]
+            wind_speed = wind["speed"]
+            weather_desc = data["weather"][0]["description"]
+            weather_report = (f"Current Temperature: {temperature} Kelvin, "
+                              f"Humidity: {humidity}%, "
+                              f"Wind Speed: {wind_speed} meter per second, "
+                              f"Weather Description: {weather_desc}")
+            print(weather_report)
+            speak(weather_report)
+        else:
+            speak("City not found.")
     elif 'goodbye' in command:
         speak("Goodbye!")
         return True  
