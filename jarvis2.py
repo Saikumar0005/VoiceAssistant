@@ -16,7 +16,7 @@ recognizer = sr.Recognizer()
 nlp = spacy.load("en_core_web_sm")
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyCHKCdZY9M6_XBoMrym3Z9pc34Ws6bwd_k")
+genai.configure(api_key="GEMINI_API_KEY")
 
 # Voice setup
 voices = engine.getProperty('voices')
